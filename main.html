@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-
+  scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css\home1.css">
+    <link rel="stylesheet" href="css\profile1.css">
+    <link rel="stylesheet" href="css/education.css">
+<link rel="stylesheet" href="css/motivationfont.css">
+<link rel="stylesheet" href="css\navstyle.css">
+	<link rel="stylesheet" href="css\contact.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css\footerm.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<title>My Profile Website</title>
+	
+	
+	
+    <script src="js\jquery.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+
+
+    <div class="nav">
+    
+<a href="index.html">
+      <button class="button"><span>&nbsp;HOME</span></button></a>
+    <a href="#pro"><button class="button"><span>ABOUT </span></button></a>
+    <a href="#proj"><button class="button"><span>INTERESTS</span></button></a>
+    <a href="#moti"><button class="button"><span>MOTIVATION&nbsp;&nbsp;</span>
+    </button></a>
+    <a href="#cont"><button class="button"><span>CONTACT</span></button>
+    </a>
+
+    </div>
+<script>
+	var prev = 0;
+var $window = $(window);
+var nav = $('.nav');
+
+$window.on('scroll', function(){
+  var scrollTop = $window.scrollTop();
+  nav.toggleClass('hidden', scrollTop > prev);
+  prev = scrollTop;
+});
+
+</script>
+
+     
+<!--home-->
+  <div class="container-fluid" >
+<div class="row">
+<div class="col-md-6" id="main1">
+
+</div>
+<div class="col-md-6" id="main2">
+
+    <div class="homehello">Hello&nbsp;&nbsp;There&nbsp;&nbsp;!
+  </div>
+  <div class="hometxt">
+    <span>I am <span><p class="myname">Roushan Kumar</p>
+  <p >
+    WeBDeveloper & Coding enthusiast...
+    CSE Undergrad..</p><br>
+	<p class="describe1">I am currently a tutee at Chandigarh University pursuing BE Computer Science & Engineering.</p>
+  <a href="#pro"><button class="button7">Get Started</button>
+  </a>
+  </div>
+  </div>
+  </div>
+  </div>
+<!--Profile-->
+
+<div class="container-fluid" id="pro">
+<div class="row">
+  <div class="col-sm-4">
+<center><a href="" id="logo1">
+<span class=" glyphicon glyphicon-sunglasses" ></span>
+</a>
+<p class="aboutm">About Me</p>
+<div class="aboutme">
+<span class="description" id="fade">Hey ! I am 20 year old , coding and developing enthusiast
+beside that i love listening to music and watching web
+series. Computers first appeared in my life when i was 13, then i got my first PC
+.<br> At first i was just playing computer games, but some time later,
+I noticed that i could do a lot more things with my pc for example Programming.<br>
+Now i can already programue in Python3, C++, HTML, Java and JavaScript.
+I hope that in the future i will get a job as a software developer / Backend-web-developer.
+</span>
+</div>
+</center>
+  </div>
+  <div class="col-sm-4"> 
+<center><a href="" id="logo1">
+<span class="glyphicon glyphicon-flash" ></span>
+</a>
+<p class="aboutm">Skills</p>
+<div class="insideskills">
+<i class="pdetail">
+{**Click on the chart for more details**}</i>
+
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+
+                function drawChart() {
+
+                  var data = google.visualization.arrayToDataTable([
+
+            ['Task', 'Hours per Day'],
+            ['Web-Developing', 7],
+            ['Coding-(Python)', 7],
+            ['Database-SQL', 2],
+            ['Backend-(HTML)-developer', 5],
+                  ]);
+
+                  var options = {
+                    title: ''
+                  };
+
+                  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+                  chart.draw(data, options);
+                }
+              </script>
+      <div id="piechart" ></div>
+
+<style>
+#piechart{
+
+width:500px; height:450px;
+ border:1px ridge green;
+ overflow:visible;
+ bottom:0;
+}
+@media (max-width:762px)
+{
+#piechart{
+width:100%; height:500px;
+ border:1px ridge green;
+ position:static;
+}
+}
+</style>
+
+</div>
+  </div>
+  <div class="col-sm-4" id="picdiv">
+
+<img src="img\1590066011722.png" class="mypic"></img>
+</div>
+</div>
+</div>
+<!--Education-->
+<div class="container-fluid" >
+<div class="row">
+<div class="col-sm-6" id="edu">
+<ol>
+<center><li class="myedu">My Education</li></center>
+<li><p class="glyphicon glyphicon-education" id="cap"></p>
+<span class="detail">Bachelor of Engineering</span><p class="year">  (2018-ongoing)</p>
+<span ><img class="culogo" src="img\cu-logo.png"></img></span>
+
+<p class="dd">Currently pursuing Bachelor of Engineering in Computer science.</p>
+
+</li>
+<li><p class="glyphicon glyphicon-education" id="cap"></p>
+<span class="detail">Intermediate</span><span class="year">  (April 2018)
+</span><span ><img class="thslogo" src="img\20200523_100718.jpg"></img></span>
+
+<p class="dd">Qualified 12th from Central Board of Secondary Education
+</p><p class="dd">in the year 2017 with 80.0% marks</p>
+<li>
+<li><p class="glyphicon glyphicon-education" id="cap"></p>
+<span class="detail">Matriculation</span><span class="year">  (April 2016)
+
+</span><span ><img class="ymcalogo" src="img\Ymca-logo-old.svg"></img></span>
+
+<p class="dd">Qualified 10th Board from CBSE with 10.0 CGPA</p>
+<li>
+<ol>
+</div>
+
+<div class="col-sm-6" id="edu2" >
+
+<img class="edu2img" src="img\john-schnobrich-2FPjlAyMQTA-unsplash.jpg"><img>
+<p class="glyphicon glyphicon-star" id="star"></p>
+<p id="moti" class="glow">___&quot;Art enables us to find ourselves and lose ourselves at the same time&quot;___<br><br><span class="glowR">
+--Thomas Merton</span>
+</p>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid" >
+<div class="row" >
+<div class="col-sm-6" id="inter">
+<img class="interimg" src="img\nesa-by-makers-IgUR1iX0mqM-unsplash.jpg"><img>
+
+</div>
+
+<div class="col-sm-6" id="inter1" >
+
+
+<ol>
+<center><li id="proj" class="myedu">My Interests</li></center>
+<li><p class="glyphicon glyphicon-pawn" id="cap"></p>
+<span class="detail">Web Development</span>
+<span ><img class="webD" src="https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg">
+</img></span>
+
+<p class="dd">Eager to know everything about it..</p>
+<p class="dd">Developed keen interest in this field during Quarantine.</p>
+
+</li>
+<li><p class="glyphicon glyphicon-pawn" id="cap"></p>
+<span class="detail">Programming</span><span ><img class="webD2" src="https://itchronicles.com/wp-content/uploads/2018/10/bigstock-Programming-Web-Banner-Best-P-258081862-1280x720.jpg">
+</img></span>
+
+<p class="dd">I have done progamming with Python3 , Java and C++
+</p><p class="dd">Love to do competetive progamming using Python3.</p>
+<li>
+
+<ol>
+</div>
+</div>
+</div>
+
+
+<!--contac&foot-->
+
+<div class="container-fluid" id="cont">
+<div class="row">
+<div class="col-sm-6" id="cont1">
+
+
+<div class="w3-container">
+  
+  
+  <div class="w3-card-4">
+    <div class="w3-container w3-cyan">
+      <h2>Contact Me</h2>
+    </div>
+
+    <form class="w3-container">
+      <p>
+	  <label>Name</label></p>
+      <input class="w3-input" type="text">
+      
+	  <p>    
+      <label>Your msg Here..</label>	  
+      <input class="w3-input" type="text">
+      </p>
+	  <p>    
+      <button>Send</button>
+      </p>
+    </form>
+  </div>
+</div>
+<ul>
+<li><p class="glyphicon glyphicon-hand-right" id="l1"></p>
+<span class="lin">GitHub:     <a href="https://github.com/Roushan1101" class="links">
+https://github.com/Roushan1101</a><span></li>
+<li><p class="glyphicon glyphicon-hand-right" id="l1"></p>
+<span class="lin">HackerRank:  <a href="https://www.hackerrank.com/Roushan110" class="links">
+https://www.hackerrank.com/Roushan110</a></span></li>
+</ul>
+
+
+
+</div>
+<div class="col-sm-6" id="cont2">
+<img class="cont2back" src="img\back.jpg"></img>
+<img class="cont2img" src="img\sketch-1590141517222.png"></img>
+<span class="addr">Address</span>
+<div class="ac1">
+<span class="glyphicon glyphicon-home" id="adlogo"></span>
+<p class="address1">Quator No. A-155 <br>Dhurwa Ranchi<br>Sector IV
+--834004,Jharkhand</p>
+</div>
+<span class="addr1">Contact</span>
+<div class="ac2">
+<p class="glyphicon glyphicon-phone" id="clogo1"></p>
+<span class="infocp1">
++91 7765883382
+</span>
+<br>
+<p class="glyphicon glyphicon-envelope" id="clogo2"></p>
+<span class="infocp1">
+roushan.kumar4321@gmail.com
+</span>
+<br>
+<p class="glyphicon glyphicon-education" id="clogo3"></p>
+<span class="infocp2">
+Chandigarh University
+
+</span>
+
+<div class="infoc">
+<p id="fade">+91 7765883382</p>
+<br>
+<p id="fade">roushan.kumar4321@gmail.com</p>
+<br>
+<p id="fade">Chandigarh University </p>
+</p id="fade">--Mohali , Punjab</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid" id="footm2">
+<div class="row" id="footm3">
+<div class="col-sm-12" id="foo">
+<div class="but1">
+<center>
+<p class="glyphicon glyphicon-grain" id="sicon1"></p>
+<br>
+
+<span><a href="https://www.facebook.com/profile.php?id=100007277611271">
+<button class="button5"><i style="font-size:40px" class="fa" id="fa1">&#xf230;</i></button></a>
+</span>
+
+<span><a href="https://github.com/Roushan1101">
+<button class="button5"><i style="font-size:40px" class="fa" id="fa1">&#xf09b;</i></button></a></span>
+
+<span><a href="https://www.instagram.com/roushan110/">
+<button class="button5"><i style="font-size:40px" class="fa" id="fa1">&#xf16d;</i></button></a></span>
+
+<span><a href="https://www.linkedin.com/in/roushan-kumar-2453b0182/">
+<button class="button5"><i style="font-size:40px" class="fa" id="fa1">&#xf08c;</i></button></a></span>
+<br>
+<p class="glyphicon glyphicon-grain" id="sicon1"></p>
+</center>
+
+
+</div>
+<div class="sicon">
+<span class="glyphicon glyphicon-grain" id="sicon21"></span>
+<span class="glyphicon glyphicon-grain" id="sicon22"></span>
+</div>
+<center><p  id="sign" style="color:MediumSeaGreen">&copy; Made with <span style="font-size:1.5em;color:red;">&hearts;</span> <i class="icon ion-heart"  ></i> by Roushan</p>
+</center>
+</div>
+
+</div>
+</div>
+
+
+
+
+  </body>
+</html>
+
+
+
+<script src="js/jquery.js"></script>
+<script>
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $("#fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+  <script src="js/jquery-2.1.4.min.js"></script>
+
+  <script src="js/script.js"></script>
+  
+  
